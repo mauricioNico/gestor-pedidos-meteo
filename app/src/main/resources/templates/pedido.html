@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Pedido meteorologico</title>
   <link rel="stylesheet" href="/css/app.css">
 </head>
-<body data-pedido-id="[[${pedidoId}]]" data-pages-base="[[${pagesBaseUrl}]]">
+<body th:attr="data-pedido-id=${pedidoId},data-pages-base=${pagesBaseUrl}">
 <header class="topbar">
   <div>
     <div class="eyebrow">Departamento Meteorologia Militar</div>
-    <h1>Pedido <span>[[${pedidoId}]]</span></h1>
+    <h1>Pedido <span th:text="${pedidoId}">PEDIDO</span></h1>
     <p>Seguimiento y visualizacion</p>
   </div>
 </header>
