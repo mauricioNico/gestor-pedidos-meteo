@@ -1,0 +1,221 @@
+name: Generar pedido meteorológico
+
+on:
+  workflow_dispatch:
+    inputs:
+      modelo:
+        description: Modelo
+        required: true
+        default: GFS
+        type: choice
+        options:
+          - GFS
+          - ECMWF
+      productos:
+        description: "Productos separados por coma: SFC,500,200,SOND,MGRAM"
+        required: true
+        default: SFC
+        type: string
+      nombre_region:
+        description: Nombre de la región
+        required: true
+        default: Sudamerica
+        type: string
+      norte:
+        description: Latitud norte
+        required: true
+        default: "15"
+        type: string
+      sur:
+        description: Latitud sur
+        required: true
+        default: "-60"
+        type: string
+      oeste:
+        description: Longitud oeste
+        required: true
+        default: "-90"
+        type: string
+      este:
+        description: Longitud este
+        required: true
+        default: "-20"
+        type: string
+      nombre_punto:
+        description: "Nombre del punto (solo SOND/MGRAM)"
+        required: false
+        default: Rio_Cuarto
+        type: string
+      lat_punto:
+        description: "Latitud del punto (vacio si no corresponde)"
+        required: false
+        default: ""
+        type: string
+      lon_punto:
+        description: "Longitud del punto (vacio si no corresponde)"
+        required: false
+        default: ""
+        type: string
+      f_inicio:
+        description: Pronostico inicial H+
+        required: true
+        default: "0"
+        type: string
+      f_fin:
+        description: Pronostico final H+
+        required: true
+        default: "24"
+        type: string
+      salto:
+        description: Intervalo en horas
+        required: true
+        default: "6"
+        type: string
+      modo_corrida:
+        description: Corrida
+        required: true
+        default: AUTO
+        type: choice
+        options:
+          - AUTO
+          - MANUAL
+      fecha:
+        description: "Fecha YYYYMMDD (solo MANUAL)"
+        required: false
+        default: ""
+        type: string
+      ciclo:
+        description: "Ciclo 00/06/12/18 (solo MANUAL)"
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+env:
+  PYTHONUTF8: "1"
+  MPLBACKEND: Agg
+
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Reconstruir motor meteorologico
+        shell: bash
+        run: |
+          cat bootstrap/bundle.part*.b64 | tr -d '\n\r' | base64 -d > /tmp/gestor_mvp_core.tar.gz
+          tar -xzf /tmp/gestor_mvp_core.tar.gz
+          test -f python/orquestador.py
+          test -f java/DescargaGFS.java
+          test -f java/DescargaECMWF.java
+          test -f scripts/crear_solicitud_workflow.py
+          echo "Motor meteorologico reconstruido correctamente."
+
+      - name: Configurar Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Configurar Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Instalar dependencias Python
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Crear solicitud del pedido
+        shell: bash
+        run: |
+          python scripts/crear_solicitud_workflow.py \
+            --salida config/solicitud_workflow.json \
+            --modelo "${{ inputs.modelo }}" \
+            --productos "${{ inputs.productos }}" \
+            --nombre-region "${{ inputs.nombre_region }}" \
+            --norte "${{ inputs.norte }}" \
+            --sur "${{ inputs.sur }}" \
+            --oeste "${{ inputs.oeste }}" \
+            --este "${{ inputs.este }}" \
+            --nombre-punto "${{ inputs.nombre_punto }}" \
+            --lat-punto "${{ inputs.lat_punto }}" \
+            --lon-punto "${{ inputs.lon_punto }}" \
+            --f-inicio "${{ inputs.f_inicio }}" \
+            --f-fin "${{ inputs.f_fin }}" \
+            --salto "${{ inputs.salto }}" \
+            --modo-corrida "${{ inputs.modo_corrida }}" \
+            --fecha "${{ inputs.fecha }}" \
+            --ciclo "${{ inputs.ciclo }}"
+
+      - name: Ejecutar motor meteorologico
+        run: python python/orquestador.py config/solicitud_workflow.json
+
+      - name: Construir visor web del pedido
+        run: python scripts/construir_galeria.py
+
+      - name: Crear ZIP descargable
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import shutil
+
+          root = Path(".")
+          salidas = root / "salidas"
+          ops = sorted(
+              [p for p in salidas.iterdir() if p.is_dir()],
+              key=lambda p: p.stat().st_mtime,
+              reverse=True,
+          )
+          if not ops:
+              raise SystemExit("No se encontro salida para empaquetar")
+
+          op = ops[0]
+          zip_path = shutil.make_archive(
+              f"pedido_{op.name}",
+              "zip",
+              root_dir=op,
+          )
+          print("Creado:", zip_path)
+          PY
+
+      - name: Subir productos como artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: pedido-meteorologico-${{ github.run_number }}
+          path: |
+            pedido_*.zip
+            salidas/**
+          retention-days: 7
+          if-no-files-found: error
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Preparar artefacto de GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  publicar:
+    needs: generar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Publicar ultimo pedido en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
