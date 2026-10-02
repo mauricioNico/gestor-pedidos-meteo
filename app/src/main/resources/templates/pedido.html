@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pedido meteorologico</title>
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body data-pedido-id="[[${pedidoId}]]" data-pages-base="[[${pagesBaseUrl}]]">
+<header class="topbar">
+  <div>
+    <div class="eyebrow">Departamento Meteorologia Militar</div>
+    <h1>Pedido <span>[[${pedidoId}]]</span></h1>
+    <p>Seguimiento y visualizacion</p>
+  </div>
+</header>
+
+<main class="shell">
+  <section class="card">
+    <div class="status-line">
+      <span id="statusDot" class="status-dot"></span>
+      <div><strong id="estado">PENDIENTE</strong><div id="mensaje">Pedido recibido</div></div>
+    </div>
+  </section>
+
+  <section id="visorCard" class="card hidden">
+    <div class="viewer-head">
+      <div><h2>Productos generados</h2><p id="resumenPedido"></p></div>
+      <label class="field selector">Producto<select id="productoSelect"></select></label>
+    </div>
+    <div class="viewer">
+      <button type="button" id="prevBtn" class="navbtn" aria-label="Anterior">◀</button>
+      <div class="image-wrap">
+        <img id="productoImg" alt="Producto meteorologico">
+        <div id="archivoActual" class="caption"></div>
+      </div>
+      <button type="button" id="nextBtn" class="navbtn" aria-label="Siguiente">▶</button>
+    </div>
+    <div class="actions">
+      <button type="button" id="playBtn" class="secondary">▶ Loop</button>
+      <a href="/" class="buttonlink secondary">Nuevo pedido</a>
+    </div>
+  </section>
+
+  <section id="errorCard" class="card hidden">
+    <h2>No se pudo generar el pedido</h2>
+    <p id="errorDetalle"></p>
+    <a href="/" class="buttonlink secondary">Volver</a>
+  </section>
+</main>
+<script src="/js/pedido.js"></script>
+</body>
+</html>
