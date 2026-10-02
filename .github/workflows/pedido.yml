@@ -111,7 +111,14 @@ jobs:
       - name: Reconstruir motor meteorologico
         shell: bash
         run: |
-          cat bootstrap/bundle.part*.b64 | tr -d '\n\r' | base64 -d > /tmp/gestor_mvp_core.tar.gz
+          set -euo pipefail
+          cat bootstrap/bundle.part*.b64 | tr -d '\n\r' > /tmp/gestor_mvp_core.b64
+          base64 -d /tmp/gestor_mvp_core.b64 > /tmp/gestor_mvp_core.tar.gz
+
+          echo "Verificando integridad del bundle..."
+          echo "c99741d8230f96038b2a267287cbffdbd9dd1517ac72167b41b8b0e46b89fc12  /tmp/gestor_mvp_core.tar.gz" | sha256sum -c -
+          gzip -t /tmp/gestor_mvp_core.tar.gz
+
           tar -xzf /tmp/gestor_mvp_core.tar.gz
           test -f python/orquestador.py
           test -f java/DescargaGFS.java
