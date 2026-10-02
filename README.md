@@ -1,98 +1,53 @@
 # Gestor de pedidos meteorológicos
 
-MVP para probar la generación remota de productos meteorológicos usando **GitHub Actions** y la publicación del último pedido mediante **GitHub Pages**.
+MVP web para solicitar productos, ejecutar el motor existente por GitHub Actions y visualizarlos sin entrar a Actions.
 
-## Objetivo de esta primera prueba
-
-El flujo es:
+## Flujo
 
 ```text
-Formulario de GitHub Actions
-        ↓
-solicitud JSON
-        ↓
-motor existente Java + Python
-        ↓
-descarga GFS / ECMWF
-        ↓
-generación de PNG
-        ↓
-artefacto ZIP + visor web
+Navegador → Spring Boot → GitHub API → GitHub Actions
+          → motor Java/Python → GitHub Pages → visor
 ```
 
-No se sube ningún producto al sitio de FAA.
+Los productos se conservan **7 días**. Cada nuevo pedido incorpora sus PNG al historial, elimina pedidos vencidos y vuelve a publicar el catálogo. En esta etapa no se genera ZIP.
 
-## Primera prueba recomendada
+## Ejecutar Spring Boot localmente
 
-En la pestaña **Actions** abrir:
+PowerShell:
 
-**Generar pedido meteorológico → Run workflow**
+```powershell
+$env:METEO_GITHUB_TOKEN="TOKEN"
+mvn -f app/pom.xml spring-boot:run
+```
 
-Usar:
+Abrir:
 
 ```text
-Modelo:       GFS
-Productos:    SFC
-Región:       Sudamerica
-Norte:        15
-Sur:          -60
-Oeste:        -90
-Este:         -20
-H inicial:    0
-H final:      24
-Intervalo:    6
-Corrida:      AUTO
+http://localhost:8080
 ```
 
-Para esta prueba dejar vacías las coordenadas del punto.
+El token debe poder disparar Actions en este repositorio y debe quedar únicamente en el backend, nunca en JavaScript.
 
-Al finalizar correctamente:
+## Variables
 
-1. El run tendrá un artefacto `pedido-meteorologico-N` descargable durante 7 días.
-2. El ZIP contiene los productos generados.
-3. El último pedido se prepara también para visualizarse mediante GitHub Pages.
+- `METEO_GITHUB_TOKEN`
+- `METEO_GITHUB_OWNER` (default `mauricioNico`)
+- `METEO_GITHUB_REPO` (default `gestor-pedidos-meteo`)
+- `METEO_GITHUB_WORKFLOW` (default `pedido.yml`)
+- `METEO_GITHUB_REF` (default `main`)
+- `METEO_PAGES_BASE_URL` (default `https://mauricionico.github.io/gestor-pedidos-meteo`)
+- `PORT` (default `8080`)
 
-## Activar GitHub Pages
+## MVP actual
 
-Antes de probar la publicación web:
+- formulario responsive;
+- backend Spring Boot;
+- creación y seguimiento de pedidos;
+- GitHub Actions oculto para el usuario final;
+- visor por producto;
+- navegación anterior/siguiente y loop;
+- historial de pedidos;
+- retención automática de 7 días;
+- sin ZIP.
 
-**Settings → Pages → Build and deployment → Source → GitHub Actions**
-
-No elegir una rama como fuente. La publicación la realiza el workflow.
-
-## Productos admitidos
-
-- `SFC`: superficie.
-- `500`: 500 hPa.
-- `200`: 200 hPa.
-- `SOND`: radiosondeo pronosticado; requiere punto.
-- `MGRAM`: meteograma; requiere punto.
-
-Se pueden combinar separados por coma, por ejemplo:
-
-```text
-SFC,500,200
-```
-
-## Estructura del MVP
-
-El motor de esta primera versión se transporta dentro de `bootstrap/bundle.part*.b64`.
-El workflow lo reconstruye en el runner de GitHub antes de ejecutarlo.
-
-Esto es **temporal para la prueba inicial**. Una vez validado el circuito completo, la siguiente etapa será dejar el código Java/Python directamente visible en el repositorio y reemplazar el formulario de `Run workflow` por el formulario web responsive del gestor.
-
-## Red
-
-En GitHub Actions el proxy está deshabilitado. El motor usa la conexión directa del runner.
-
-## Próxima etapa
-
-Cuando la prueba GFS/SFC funcione de punta a punta:
-
-- formulario web propio;
-- identificación de pedido;
-- estados Pendiente / Ejecutando / Finalizado;
-- visor por modelo, producto y H+;
-- descarga individual de PNG;
-- descarga completa del pedido en ZIP;
-- historial y vencimiento de pedidos.
+El motor meteorológico continúa sin cambios funcionales y permanece temporalmente empaquetado en `bootstrap/`.
