@@ -72,6 +72,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Ampliar descarga ECMWF para MGRAM operativo
+        if: ${{ inputs.modelo == 'ECMWF' && contains(inputs.productos, 'MGRAM') }}
+        run: python scripts/patch_ecmwf_mgram.py java/DescargaECMWF.java
+
       - name: Crear solicitud
         shell: bash
         run: |
@@ -92,6 +96,10 @@ jobs:
       - name: Regenerar MGRAM GFS con referencia operativa
         if: ${{ inputs.modelo == 'GFS' && contains(inputs.productos, 'MGRAM') }}
         run: python scripts/regenerar_mgram_gfs.py config/solicitud_workflow.json
+
+      - name: Regenerar MGRAM ECMWF con estilo operativo
+        if: ${{ inputs.modelo == 'ECMWF' && contains(inputs.productos, 'MGRAM') }}
+        run: python scripts/regenerar_mgram_ecmwf.py config/solicitud_workflow.json
 
       - name: Recuperar historial publicado
         shell: bash
