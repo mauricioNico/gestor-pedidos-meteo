@@ -89,6 +89,10 @@ jobs:
       - name: Ejecutar motor
         run: python python/orquestador.py config/solicitud_workflow.json
 
+      - name: Regenerar MGRAM GFS con referencia operativa
+        if: ${{ inputs.modelo == 'GFS' && contains(inputs.productos, 'MGRAM') }}
+        run: python scripts/regenerar_mgram_gfs.py config/solicitud_workflow.json
+
       - name: Recuperar historial publicado
         shell: bash
         env:
