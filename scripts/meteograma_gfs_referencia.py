@@ -101,6 +101,22 @@ def extraer_dataarray_punto(ds, lat, lon):
     return extraer_variable_principal(pto)
 
 
+def _eje_isobarico(da):
+    """
+    Devuelve el nombre del eje/coordenada isobárica y el factor para convertir
+    sus valores a hPa.
+
+    GFS suele exponer isobaricInhPa. Algunos mensajes ECMWF de cfgrib pueden
+    aparecer como isobaricInPa y, cuando contienen un solo nivel, la presión
+    queda como coordenada escalar en lugar de dimensión.
+    """
+    for nombre in ("isobaricInhPa", "isobaricInPa"):
+        if nombre in da.coords or nombre in da.dims:
+            factor = 0.01 if nombre == "isobaricInPa" else 1.0
+            return nombre, factor
+    return None, 1.0
+
+
 def extraer_escalar_isobarico(ds, lat, lon, nivel_hpa):
     if ds is None:
         return np.nan
@@ -113,24 +129,31 @@ def extraer_escalar_isobarico(ds, lat, lon, nivel_hpa):
     if da is None:
         return np.nan
 
-    eje = None
-
-    for c in da.coords:
-        if "isobaricInhPa" in c:
-            eje = c
-            break
-
-    if eje is None:
-        for d in da.dims:
-            if "isobaricInhPa" in d:
-                eje = d
-                break
-
+    eje, factor = _eje_isobarico(da)
     if eje is None:
         return np.nan
 
     try:
-        da_nivel = da.sel({eje: nivel_hpa}, method="nearest")
+        coord = np.asarray(da[eje].values, dtype=float).squeeze()
+
+        # Caso ECMWF habitual para campos descargados a un único nivel
+        # (por ejemplo gh500 o w700): la presión es una coordenada escalar.
+        if np.ndim(coord) == 0:
+            nivel_coord_hpa = float(coord) * factor
+            if abs(nivel_coord_hpa - float(nivel_hpa)) <= 1.0:
+                return float(np.asarray(da.values).squeeze())
+            return np.nan
+
+        niveles_hpa = np.asarray(coord, dtype=float) * factor
+        idx = int(np.nanargmin(np.abs(niveles_hpa - float(nivel_hpa))))
+
+        if eje in da.dims:
+            da_nivel = da.isel({eje: idx})
+        else:
+            # Coordenada no dimensional: si hay varios valores, usamos el más
+            # cercano sólo cuando la variable puede indexarse de igual forma.
+            da_nivel = da
+
         return float(np.asarray(da_nivel.values).squeeze())
     except Exception:
         return np.nan
@@ -148,26 +171,20 @@ def extraer_perfil_isobarico(ds, lat, lon):
     if da is None:
         return None, None
 
-    eje = None
-
-    for c in da.coords:
-        if "isobaricInhPa" in c:
-            eje = c
-            break
-
-    if eje is None:
-        for d in da.dims:
-            if "isobaricInhPa" in d:
-                eje = d
-                break
-
+    eje, factor = _eje_isobarico(da)
     if eje is None:
         return None, None
 
     try:
-        niveles = np.asarray(da[eje].values, dtype=float)
+        niveles = np.asarray(da[eje].values, dtype=float).squeeze()
         valores = np.asarray(da.values, dtype=float).squeeze()
 
+        if np.ndim(niveles) == 0:
+            niveles = np.asarray([float(niveles) * factor], dtype=float)
+            valores = np.asarray([float(np.asarray(valores).squeeze())], dtype=float)
+            return niveles, valores
+
+        niveles = np.asarray(niveles, dtype=float) * factor
         if valores.ndim != 1:
             valores = valores.reshape(-1)
 
