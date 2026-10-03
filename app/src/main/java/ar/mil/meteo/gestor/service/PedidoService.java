@@ -53,8 +53,20 @@ public class PedidoService {
         if(r.norte()<=r.sur())throw new IllegalArgumentException("La latitud norte debe ser mayor que la latitud sur.");
         if(r.fFin()<r.fInicio())throw new IllegalArgumentException("H final debe ser mayor o igual que H inicial.");
         if((r.fFin()-r.fInicio())%r.salto()!=0)throw new IllegalArgumentException("El intervalo debe dividir exactamente el periodo solicitado.");
+
         boolean punto=r.productos().stream().map(String::toUpperCase).anyMatch(x->x.equals("SOND")||x.equals("MGRAM"));
-        if(punto&&(r.latPunto()==null||r.lonPunto()==null))throw new IllegalArgumentException("SOND/MGRAM requieren latitud y longitud del punto.");
+        if(punto&&(r.latPunto()==null||r.lonPunto()==null))
+            throw new IllegalArgumentException("SOND/MGRAM requieren latitud y longitud del punto.");
+
+        if(r.rutaHabilitada()){
+            boolean cartografico=r.productos().stream().map(String::toUpperCase)
+                    .anyMatch(x->x.equals("SFC")||x.equals("500")||x.equals("200"));
+            if(!cartografico)
+                throw new IllegalArgumentException("La ruta se dibuja solamente en productos SFC, 500 y 200 hPa.");
+            if(r.origenLat()==null||r.origenLon()==null||r.destinoLat()==null||r.destinoLon()==null)
+                throw new IllegalArgumentException("La ruta requiere latitud y longitud de origen y destino.");
+        }
+
         if("MANUAL".equalsIgnoreCase(r.modoCorrida())&&(r.fecha()==null||r.fecha().isBlank()||r.ciclo()==null||r.ciclo().isBlank()))
             throw new IllegalArgumentException("La corrida manual requiere fecha y ciclo.");
     }
