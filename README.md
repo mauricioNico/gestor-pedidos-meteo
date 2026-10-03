@@ -51,3 +51,26 @@ El token debe poder disparar Actions en este repositorio y debe quedar únicamen
 - sin ZIP.
 
 El motor meteorológico continúa sin cambios funcionales y permanece temporalmente empaquetado en `bootstrap/`.
+
+
+## MGRAM operativo
+
+Para pedidos **GFS + MGRAM**, el workflow regenera el producto usando como referencia directa
+`productosMetCloud/python/meteograma_gfs.py`.
+
+El producto incluye:
+
+- perfil vertical 1000–400 hPa con HR, temperatura y barbas;
+- MSLP + Z500;
+- CAPE + Lifted Index;
+- viento 10 m + ráfagas + barbas;
+- T2m + Td2m;
+- omega 700 hPa;
+- precipitación por intervalo.
+
+Para obtener esos campos sin inflar la descarga cartográfica del pedido, el workflow realiza
+un recorte GFS pequeño alrededor del punto solicitado y genera el MGRAM completo después del
+motor general.
+
+Por ahora este reemplazo completo se aplica a **GFS**. ECMWF conserva el generador MGRAM
+general hasta adaptar el mismo diseño a los campos disponibles de IFS Open Data.
