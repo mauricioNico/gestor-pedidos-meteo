@@ -215,13 +215,33 @@ def main() -> int:
         str(datos_taf),
     ]
     print("[MGRAM] Ejecutando meteograma de referencia...")
-    subprocess.run(cmd, check=True)
+    proceso = subprocess.run(cmd, check=False)
 
-    generados = list(salida_mgram.glob("meteograma_*.png"))
+    generados = [
+        p for p in salida_mgram.glob("meteograma_*.png")
+        if p.is_file() and p.stat().st_size > 10_000
+    ]
+
+    if proceso.returncode != 0:
+        # En Ubuntu/cfgrib/eccodes se ha observado SIGSEGV durante el cierre
+        # del intérprete DESPUÉS de que matplotlib ya guardó correctamente el PNG.
+        # No damos por bueno el proceso sólo por el código: exigimos un PNG real.
+        if proceso.returncode in (-11, 139) and generados:
+            print(
+                "[MGRAM][WARN] El proceso termino con SIGSEGV durante el cierre "
+                "de librerias nativas, pero el PNG fue generado correctamente. "
+                "Se continua con la publicacion."
+            )
+        else:
+            raise RuntimeError(
+                f"El generador MGRAM termino con codigo {proceso.returncode} "
+                "y no produjo un PNG valido."
+            )
+
     if not generados:
-        raise RuntimeError("El meteograma de referencia no genero PNG.")
+        raise RuntimeError("El meteograma de referencia no genero PNG valido.")
 
-    print(f"[MGRAM] Producto final: {generados[0]}")
+    print(f"[MGRAM] Producto final: {generados[0]} ({generados[0].stat().st_size} bytes)")
     return 0
 
 
