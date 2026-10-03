@@ -89,7 +89,7 @@ def main() -> int:
     if not archivos:
         raise RuntimeError(f"No se encontraron GRIB ECMWF MGRAM en {carpeta_gribs}")
 
-    niveles_verticales = np.array([1000, 925, 850, 700, 500, 400], dtype=float)
+    niveles_verticales = np.array([1000, 950, 925, 900, 850, 800, 750, 700, 650, 600, 550, 500, 450, 400], dtype=float)
 
     tiempos = []
     lead_h = []
@@ -387,6 +387,7 @@ def main() -> int:
     ax5.axhline(0, color="#777777", linestyle="--", linewidth=0.9)
     fijar_escala_omega(ax5, df["omega700"].values)
     ax5.set_ylabel("Omega 700\n(Pa/s)")
+    ax5.set_title("Velocidad vertical 700 hPa", loc="left", fontsize=9)
     ax5.grid(True, linestyle="--", alpha=0.45)
 
     # 7) Precipitación por intervalo
