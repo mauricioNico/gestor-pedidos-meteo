@@ -57,8 +57,32 @@
       </div>
     </section>
 
+
     <section>
-      <h2>4. Pronostico</h2>
+      <h2>4. Ruta opcional</h2>
+      <p>Se dibuja sobre las cartas SFC, 500 y 200 hPa.</p>
+      <label class="checks">
+        <span><input id="rutaHabilitada" type="checkbox"> Dibujar ruta entre origen y destino</span>
+      </label>
+      <div id="rutaFields" class="hidden">
+        <div class="grid three">
+          <label class="field">Nombre de la ruta<input id="rutaNombre" placeholder="Ej.: Natal - Rio Cuarto"></label>
+        </div>
+        <div class="grid three">
+          <label class="field">Origen<input id="origenEtiqueta" placeholder="Ej.: SBNT"></label>
+          <label class="field">Latitud origen<input id="origenLat" type="number" step="0.01"></label>
+          <label class="field">Longitud origen<input id="origenLon" type="number" step="0.01"></label>
+        </div>
+        <div class="grid three">
+          <label class="field">Destino<input id="destinoEtiqueta" placeholder="Ej.: SAOC"></label>
+          <label class="field">Latitud destino<input id="destinoLat" type="number" step="0.01"></label>
+          <label class="field">Longitud destino<input id="destinoLon" type="number" step="0.01"></label>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>5. Pronostico</h2>
       <div class="grid four">
         <label class="field">H inicial<input id="fInicio" type="number" min="0" value="0"></label>
         <label class="field">H final<input id="fFin" type="number" min="0" value="24"></label>
