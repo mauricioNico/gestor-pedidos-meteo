@@ -14,6 +14,16 @@ public record PedidoRequest(
         String nombrePunto,
         @DecimalMin("-90") @DecimalMax("90") Double latPunto,
         @DecimalMin("-180") @DecimalMax("360") Double lonPunto,
+
+        boolean rutaHabilitada,
+        String rutaNombre,
+        String origenEtiqueta,
+        @DecimalMin("-90") @DecimalMax("90") Double origenLat,
+        @DecimalMin("-180") @DecimalMax("360") Double origenLon,
+        String destinoEtiqueta,
+        @DecimalMin("-90") @DecimalMax("90") Double destinoLat,
+        @DecimalMin("-180") @DecimalMax("360") Double destinoLon,
+
         @NotNull @Min(0) Integer fInicio,
         @NotNull @Min(0) Integer fFin,
         @NotNull @Positive Integer salto,
