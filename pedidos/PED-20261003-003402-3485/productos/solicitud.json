@@ -1,0 +1,45 @@
+{
+  "modelo": "ECMWF",
+  "productos": [
+    "SFC"
+  ],
+  "region": {
+    "nombre": "Antártida",
+    "norte": -30.0,
+    "sur": -90.0,
+    "oeste": -90.0,
+    "este": -40.0,
+    "cruza_dateline": false
+  },
+  "punto": {
+    "habilitado": true,
+    "nombre": "Marambio",
+    "lat": -64.14,
+    "lon": -56.4
+  },
+  "corrida": {
+    "modo": "AUTO",
+    "fecha": null,
+    "ciclo": null
+  },
+  "periodo": {
+    "f_inicio": 0,
+    "f_fin": 24,
+    "salto": 6
+  },
+  "ruta": {
+    "dibujar": false,
+    "nombre": "",
+    "origen": {
+      "lat": null,
+      "lon": null,
+      "etiqueta": ""
+    },
+    "destino": {
+      "lat": null,
+      "lon": null,
+      "etiqueta": ""
+    },
+    "waypoints": []
+  }
+}

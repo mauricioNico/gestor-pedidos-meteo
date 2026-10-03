@@ -1,0 +1,14 @@
+{
+  "id": "PED-20261003-022109-2483",
+  "creado": "2026-10-03T02:33:07Z",
+  "modelo": "ECMWF",
+  "region": "Sudamerica",
+  "productos": "MGRAM",
+  "archivos": [
+    {
+      "nombre": "meteograma_La_Plata.png",
+      "ruta": "MGRAM/meteograma_La_Plata.png",
+      "producto": "MGRAM"
+    }
+  ]
+}

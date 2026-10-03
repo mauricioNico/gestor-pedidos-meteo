@@ -1,0 +1,34 @@
+{
+  "id": "PED-20261003-000427-2656",
+  "creado": "2026-10-03T00:07:20Z",
+  "modelo": "ECMWF",
+  "region": "Sudamerica",
+  "productos": "SFC",
+  "archivos": [
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f000.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f000.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f006.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f006.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f012.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f012.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f018.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f018.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f024.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f024.png",
+      "producto": "SFC"
+    }
+  ]
+}

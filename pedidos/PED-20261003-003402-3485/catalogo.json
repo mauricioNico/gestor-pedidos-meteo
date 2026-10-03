@@ -1,0 +1,34 @@
+{
+  "id": "PED-20261003-003402-3485",
+  "creado": "2026-10-03T00:36:34Z",
+  "modelo": "ECMWF",
+  "region": "Antártida",
+  "productos": "SFC",
+  "archivos": [
+    {
+      "nombre": "ECMWF_SFC_Antartida_f000.png",
+      "ruta": "SFC/ECMWF_SFC_Antartida_f000.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Antartida_f006.png",
+      "ruta": "SFC/ECMWF_SFC_Antartida_f006.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Antartida_f012.png",
+      "ruta": "SFC/ECMWF_SFC_Antartida_f012.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Antartida_f018.png",
+      "ruta": "SFC/ECMWF_SFC_Antartida_f018.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Antartida_f024.png",
+      "ruta": "SFC/ECMWF_SFC_Antartida_f024.png",
+      "producto": "SFC"
+    }
+  ]
+}
