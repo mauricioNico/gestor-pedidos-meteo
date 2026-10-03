@@ -15,6 +15,14 @@ on:
       nombre_punto: {description: Nombre del punto, required: false, default: Rio_Cuarto, type: string}
       lat_punto: {description: Latitud del punto, required: false, default: "", type: string}
       lon_punto: {description: Longitud del punto, required: false, default: "", type: string}
+      ruta_habilitada: {description: Dibujar ruta, required: false, default: "false", type: string}
+      ruta_nombre: {description: Nombre de la ruta, required: false, default: "", type: string}
+      origen_etiqueta: {description: Etiqueta origen, required: false, default: "", type: string}
+      origen_lat: {description: Latitud origen, required: false, default: "", type: string}
+      origen_lon: {description: Longitud origen, required: false, default: "", type: string}
+      destino_etiqueta: {description: Etiqueta destino, required: false, default: "", type: string}
+      destino_lat: {description: Latitud destino, required: false, default: "", type: string}
+      destino_lon: {description: Longitud destino, required: false, default: "", type: string}
       f_inicio: {description: Pronóstico inicial H+, required: true, default: "0", type: string}
       f_fin: {description: Pronóstico final H+, required: true, default: "24", type: string}
       salto: {description: Intervalo, required: true, default: "6", type: string}
@@ -67,11 +75,14 @@ jobs:
       - name: Crear solicitud
         shell: bash
         run: |
-          python scripts/crear_solicitud_workflow.py --salida config/solicitud_workflow.json \
+          python scripts/crear_solicitud_gestor.py --salida config/solicitud_workflow.json \
             --modelo "${{ inputs.modelo }}" --productos "${{ inputs.productos }}" \
             --nombre-region "${{ inputs.nombre_region }}" --norte "${{ inputs.norte }}" --sur "${{ inputs.sur }}" \
             --oeste "${{ inputs.oeste }}" --este "${{ inputs.este }}" --nombre-punto "${{ inputs.nombre_punto }}" \
             --lat-punto "${{ inputs.lat_punto }}" --lon-punto "${{ inputs.lon_punto }}" \
+            --ruta-habilitada "${{ inputs.ruta_habilitada }}" --ruta-nombre "${{ inputs.ruta_nombre }}" \
+            --origen-etiqueta "${{ inputs.origen_etiqueta }}" --origen-lat "${{ inputs.origen_lat }}" --origen-lon "${{ inputs.origen_lon }}" \
+            --destino-etiqueta "${{ inputs.destino_etiqueta }}" --destino-lat "${{ inputs.destino_lat }}" --destino-lon "${{ inputs.destino_lon }}" \
             --f-inicio "${{ inputs.f_inicio }}" --f-fin "${{ inputs.f_fin }}" --salto "${{ inputs.salto }}" \
             --modo-corrida "${{ inputs.modo_corrida }}" --fecha "${{ inputs.fecha }}" --ciclo "${{ inputs.ciclo }}"
 
