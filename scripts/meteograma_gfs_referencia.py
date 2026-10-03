@@ -1479,3 +1479,11 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    # Workaround para Linux + cfgrib/eccodes: en algunos runners el proceso
+    # recibe SIGSEGV durante la destruccion de objetos nativos al cerrar Python,
+    # incluso despues de haber guardado correctamente PNG/CSV.
+    # En este punto main() termino sin excepciones y las salidas ya fueron escritas.
+    sys.stdout.flush()
+    sys.stderr.flush()
+    os._exit(0)
