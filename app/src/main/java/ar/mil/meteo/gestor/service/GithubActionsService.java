@@ -41,6 +41,16 @@ public class GithubActionsService {
         in.put("nombre_punto",nvl(s.nombrePunto()));
         in.put("lat_punto",s.latPunto()==null?"":s.latPunto().toString());
         in.put("lon_punto",s.lonPunto()==null?"":s.lonPunto().toString());
+
+        in.put("ruta_habilitada",Boolean.toString(s.rutaHabilitada()));
+        in.put("ruta_nombre",nvl(s.rutaNombre()));
+        in.put("origen_etiqueta",nvl(s.origenEtiqueta()));
+        in.put("origen_lat",s.origenLat()==null?"":s.origenLat().toString());
+        in.put("origen_lon",s.origenLon()==null?"":s.origenLon().toString());
+        in.put("destino_etiqueta",nvl(s.destinoEtiqueta()));
+        in.put("destino_lat",s.destinoLat()==null?"":s.destinoLat().toString());
+        in.put("destino_lon",s.destinoLon()==null?"":s.destinoLon().toString());
+
         in.put("f_inicio",String.valueOf(s.fInicio())); in.put("f_fin",String.valueOf(s.fFin()));
         in.put("salto",String.valueOf(s.salto())); in.put("modo_corrida",s.modoCorrida());
         in.put("fecha",nvl(s.fecha())); in.put("ciclo",nvl(s.ciclo()));
