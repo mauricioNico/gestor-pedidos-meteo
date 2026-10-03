@@ -74,3 +74,22 @@ motor general.
 
 Por ahora este reemplazo completo se aplica a **GFS**. ECMWF conserva el generador MGRAM
 general hasta adaptar el mismo diseño a los campos disponibles de IFS Open Data.
+
+
+### ECMWF
+
+Los pedidos **ECMWF + MGRAM** usan ahora el mismo diseño operativo general que GFS.
+
+Para ese producto el workflow amplía temporalmente el descargador ECMWF del motor
+y agrega a los GRIB MGRAM los campos necesarios para:
+
+- perfil vertical 1000–400 hPa con humedad relativa, temperatura y viento;
+- MSLP + Z500;
+- MUCAPE;
+- viento 10 m + ráfagas + barbas;
+- T2m + Td2m;
+- omega 700 hPa;
+- precipitación por intervalo.
+
+El panel convectivo usa **MUCAPE**. No se dibuja Lifted Index nativo porque ese
+campo no forma parte del subconjunto ECMWF Open Data utilizado por el sistema.
