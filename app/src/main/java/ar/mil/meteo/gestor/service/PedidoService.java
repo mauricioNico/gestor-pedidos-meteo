@@ -69,5 +69,63 @@ public class PedidoService {
 
         if("MANUAL".equalsIgnoreCase(r.modoCorrida())&&(r.fecha()==null||r.fecha().isBlank()||r.ciclo()==null||r.ciclo().isBlank()))
             throw new IllegalArgumentException("La corrida manual requiere fecha y ciclo.");
+
+        validarPeriodoModelo(r);
+    }
+
+    private static void validarPeriodoModelo(PedidoRequest r){
+        String modelo=r.modelo()==null?"":r.modelo().trim().toUpperCase();
+
+        switch(modelo){
+            case "GFS" -> validarPeriodoGfs(r);
+            case "ECMWF" -> validarPeriodoEcmwf(r);
+            default -> throw new IllegalArgumentException("Modelo no soportado: "+r.modelo());
+        }
+    }
+
+    private static void validarPeriodoGfs(PedidoRequest r){
+        if(r.fFin()>384)
+            throw new IllegalArgumentException("GFS permite pronosticos hasta H+384.");
+
+        for(int h=r.fInicio();h<=r.fFin();h+=r.salto()){
+            boolean publicado = h<=120 || (h>120 && h%3==0);
+            if(!publicado){
+                throw new IllegalArgumentException(
+                        "GFS publica pasos horarios hasta H+120 y luego cada 3 h hasta H+384. "
+                        +"El pedido incluye H+"+h+", que no esta disponible.");
+            }
+        }
+    }
+
+    private static void validarPeriodoEcmwf(PedidoRequest r){
+        boolean manual="MANUAL".equalsIgnoreCase(r.modoCorrida());
+        String ciclo=r.ciclo()==null?"":r.ciclo().trim();
+
+        if(manual && ("06".equals(ciclo)||"18".equals(ciclo))){
+            if(r.fFin()>90)
+                throw new IllegalArgumentException(
+                        "ECMWF en las corridas 06/18 UTC permite el pronostico determinista hasta H+90.");
+            for(int h=r.fInicio();h<=r.fFin();h+=r.salto()){
+                if(h%3!=0){
+                    throw new IllegalArgumentException(
+                            "ECMWF 06/18 UTC publica pasos cada 3 h hasta H+90. "
+                            +"El pedido incluye H+"+h+", que no esta disponible.");
+                }
+            }
+            return;
+        }
+
+        if(r.fFin()>240)
+            throw new IllegalArgumentException(
+                    "ECMWF determinista en las corridas 00/12 UTC permite pronosticos hasta H+240.");
+
+        for(int h=r.fInicio();h<=r.fFin();h+=r.salto()){
+            boolean publicado = h<=144 ? h%3==0 : h%6==0;
+            if(!publicado){
+                throw new IllegalArgumentException(
+                        "ECMWF publica cada 3 h hasta H+144 y luego cada 6 h hasta H+240. "
+                        +"El pedido incluye H+"+h+", que no esta disponible.");
+            }
+        }
     }
 }
