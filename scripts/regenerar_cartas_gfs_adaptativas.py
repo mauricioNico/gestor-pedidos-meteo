@@ -114,9 +114,16 @@ def main():
     left = float(region["oeste"])
     right = float(region["este"])
 
+    # Los GRIB GFS descargados por el gestor usan longitudes 0..360.
+    # Los generadores operativos recortan el xarray antes de proyectar, por
+    # lo que deben recibir el mismo sistema de longitudes que el GRIB.
+    left_data = left % 360.0
+    right_data = right % 360.0
+
     print(
         f"Regeneración cartográfica GFS: {nombre_region} | "
-        f"N={top} S={bottom} W={left} E={right}"
+        f"N={top} S={bottom} W={left} E={right} | "
+        f"GRIB lon={left_data}..{right_data}"
     )
 
     base_gribs = Path("gribs/gfs")
@@ -158,8 +165,8 @@ def main():
                 str(salida),
                 str(top),
                 str(bottom),
-                str(left),
-                str(right),
+                str(left_data),
+                str(right_data),
             ]
 
             print(f"[{producto}] f{paso:03d} -> {salida.name}", flush=True)
