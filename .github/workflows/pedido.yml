@@ -62,6 +62,27 @@ jobs:
           python-version: "3.11"
           cache: pip
 
+      - name: Actualizar cartas GFS desde productosMetCloud
+        if: ${{ inputs.modelo == 'GFS' && (contains(inputs.productos, 'SFC') || contains(inputs.productos, '500') || contains(inputs.productos, '200')) }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE="https://raw.githubusercontent.com/mauricioNico/productosMetCloud/master/python"
+
+          echo "Actualizando generadores GFS desde productosMetCloud/master..."
+          curl -fsSL "$BASE/mapa_mslp.py" -o python/mapa_mslp.py
+          curl -fsSL "$BASE/mapa_500.py" -o python/mapa_500.py
+          curl -fsSL "$BASE/mapa_200.py" -o python/mapa_200.py
+          curl -fsSL "$BASE/mapa_proyeccion_adaptativa.py" -o python/mapa_proyeccion_adaptativa.py
+
+          python -m py_compile \
+            python/mapa_mslp.py \
+            python/mapa_500.py \
+            python/mapa_200.py \
+            python/mapa_proyeccion_adaptativa.py
+
+          echo "Generadores GFS actualizados y validados."
+
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
