@@ -1,0 +1,45 @@
+{
+  "modelo": "GFS",
+  "productos": [
+    "SFC"
+  ],
+  "region": {
+    "nombre": "Patagonia y Antartida",
+    "norte": -45.0,
+    "sur": -85.0,
+    "oeste": -110.0,
+    "este": -20.0,
+    "cruza_dateline": false
+  },
+  "punto": {
+    "habilitado": false,
+    "nombre": "Rio Cuarto",
+    "lat": null,
+    "lon": null
+  },
+  "corrida": {
+    "modo": "AUTO",
+    "fecha": null,
+    "ciclo": null
+  },
+  "periodo": {
+    "f_inicio": 0,
+    "f_fin": 24,
+    "salto": 6
+  },
+  "ruta": {
+    "dibujar": false,
+    "nombre": "",
+    "origen": {
+      "lat": null,
+      "lon": null,
+      "etiqueta": ""
+    },
+    "destino": {
+      "lat": null,
+      "lon": null,
+      "etiqueta": ""
+    },
+    "waypoints": []
+  }
+}

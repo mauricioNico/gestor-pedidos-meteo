@@ -1,0 +1,6 @@
+Modelo: ECMWF
+Producto: SFC
+Generadas: 31
+Errores/advertencias: 0
+
+

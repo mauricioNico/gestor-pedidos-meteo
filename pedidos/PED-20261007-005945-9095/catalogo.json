@@ -1,0 +1,214 @@
+{
+  "id": "PED-20261007-005945-9095",
+  "creado": "2026-10-07T01:13:18Z",
+  "modelo": "ECMWF",
+  "region": "Cono Sur",
+  "productos": "SFC",
+  "archivos": [
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f000.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f000.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f003.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f003.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f006.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f006.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f009.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f009.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f012.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f012.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f015.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f015.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f018.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f018.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f021.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f021.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f024.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f024.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f027.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f027.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f030.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f030.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f033.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f033.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f036.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f036.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f039.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f039.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f042.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f042.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f045.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f045.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f048.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f048.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f051.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f051.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f054.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f054.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f057.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f057.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f060.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f060.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f063.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f063.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f066.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f066.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f069.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f069.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f072.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f072.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f075.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f075.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f078.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f078.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f081.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f081.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f084.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f084.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f087.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f087.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f090.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f090.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f093.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f093.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f096.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f096.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f099.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f099.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f102.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f102.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f105.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f105.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f108.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f108.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f111.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f111.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f114.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f114.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f117.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f117.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f120.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f120.png",
+      "producto": "SFC"
+    }
+  ]
+}

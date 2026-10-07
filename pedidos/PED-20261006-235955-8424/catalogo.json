@@ -1,0 +1,169 @@
+{
+  "id": "PED-20261006-235955-8424",
+  "creado": "2026-10-07T00:50:12Z",
+  "modelo": "ECMWF",
+  "region": "Cono Sur",
+  "productos": "SFC,MGRAM",
+  "archivos": [
+    {
+      "nombre": "meteograma_La_Plata.png",
+      "ruta": "MGRAM/meteograma_La_Plata.png",
+      "producto": "MGRAM"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f000.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f000.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f006.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f006.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f012.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f012.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f018.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f018.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f024.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f024.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f030.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f030.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f036.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f036.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f042.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f042.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f048.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f048.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f054.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f054.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f060.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f060.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f066.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f066.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f072.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f072.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f078.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f078.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f084.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f084.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f090.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f090.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f096.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f096.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f102.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f102.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f108.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f108.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f114.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f114.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f120.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f120.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f126.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f126.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f132.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f132.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f138.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f138.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f144.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f144.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f150.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f150.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f156.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f156.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f162.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f162.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f168.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f168.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f174.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f174.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f180.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f180.png",
+      "producto": "SFC"
+    }
+  ]
+}

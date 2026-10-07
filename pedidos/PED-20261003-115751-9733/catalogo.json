@@ -1,0 +1,164 @@
+{
+  "id": "PED-20261003-115751-9733",
+  "creado": "2026-10-03T12:08:46Z",
+  "modelo": "ECMWF",
+  "region": "Sudamerica",
+  "productos": "SFC",
+  "archivos": [
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f000.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f000.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f006.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f006.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f012.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f012.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f018.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f018.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f024.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f024.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f030.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f030.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f036.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f036.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f042.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f042.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f048.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f048.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f054.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f054.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f060.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f060.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f066.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f066.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f072.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f072.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f078.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f078.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f084.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f084.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f090.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f090.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f096.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f096.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f102.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f102.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f108.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f108.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f114.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f114.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f120.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f120.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f126.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f126.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f132.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f132.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f138.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f138.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f144.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f144.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f150.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f150.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f156.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f156.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f162.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f162.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f168.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f168.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f174.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f174.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Sudamerica_f180.png",
+      "ruta": "SFC/ECMWF_SFC_Sudamerica_f180.png",
+      "producto": "SFC"
+    }
+  ]
+}

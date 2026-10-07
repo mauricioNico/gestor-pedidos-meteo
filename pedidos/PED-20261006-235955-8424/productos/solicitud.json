@@ -1,0 +1,46 @@
+{
+  "modelo": "ECMWF",
+  "productos": [
+    "SFC",
+    "MGRAM"
+  ],
+  "region": {
+    "nombre": "Cono Sur",
+    "norte": -15.0,
+    "sur": -52.0,
+    "oeste": -90.0,
+    "este": -30.0,
+    "cruza_dateline": false
+  },
+  "punto": {
+    "habilitado": true,
+    "nombre": "La Plata",
+    "lat": -34.93,
+    "lon": -57.95
+  },
+  "corrida": {
+    "modo": "AUTO",
+    "fecha": null,
+    "ciclo": null
+  },
+  "periodo": {
+    "f_inicio": 0,
+    "f_fin": 180,
+    "salto": 6
+  },
+  "ruta": {
+    "dibujar": false,
+    "nombre": "",
+    "origen": {
+      "lat": null,
+      "lon": null,
+      "etiqueta": ""
+    },
+    "destino": {
+      "lat": null,
+      "lon": null,
+      "etiqueta": ""
+    },
+    "waypoints": []
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "modelo": "ECMWF",
+  "productos": [
+    "SFC"
+  ],
+  "region": {
+    "nombre": "Patagonia y Antartida",
+    "norte": -48.0,
+    "sur": -68.0,
+    "oeste": -110.0,
+    "este": -40.0,
+    "cruza_dateline": false
+  },
+  "punto": {
+    "habilitado": false,
+    "nombre": "Rio Cuarto",
+    "lat": null,
+    "lon": null
+  },
+  "corrida": {
+    "modo": "AUTO",
+    "fecha": null,
+    "ciclo": null
+  },
+  "periodo": {
+    "f_inicio": 0,
+    "f_fin": 48,
+    "salto": 3
+  },
+  "ruta": {
+    "dibujar": false,
+    "nombre": "",
+    "origen": {
+      "lat": null,
+      "lon": null,
+      "etiqueta": ""
+    },
+    "destino": {
+      "lat": null,
+      "lon": null,
+      "etiqueta": ""
+    },
+    "waypoints": []
+  }
+}

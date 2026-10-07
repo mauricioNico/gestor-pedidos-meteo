@@ -1,0 +1,44 @@
+{
+  "modelo": "ECMWF",
+  "productos": [
+    "MGRAM"
+  ],
+  "region": {
+    "nombre": "Sudamerica",
+    "norte": 15.0,
+    "sur": -60.0,
+    "oeste": -90.0,
+    "este": -20.0
+  },
+  "punto": {
+    "habilitado": true,
+    "nombre": "Puerto Argentino",
+    "lat": -51.68,
+    "lon": -57.77
+  },
+  "corrida": {
+    "modo": "AUTO",
+    "fecha": null,
+    "ciclo": null
+  },
+  "periodo": {
+    "f_inicio": 0,
+    "f_fin": 48,
+    "salto": 3
+  },
+  "ruta": {
+    "dibujar": false,
+    "nombre": "",
+    "origen": {
+      "lat": null,
+      "lon": null,
+      "etiqueta": ""
+    },
+    "destino": {
+      "lat": null,
+      "lon": null,
+      "etiqueta": ""
+    },
+    "waypoints": []
+  }
+}

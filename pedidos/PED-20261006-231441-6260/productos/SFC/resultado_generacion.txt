@@ -1,0 +1,6 @@
+Modelo: GFS
+Producto: SFC
+Generadas: 4
+Errores/advertencias: 1
+
+[ERROR] No se pudo generar SFC f000: Input z must be 2D, not 3D
