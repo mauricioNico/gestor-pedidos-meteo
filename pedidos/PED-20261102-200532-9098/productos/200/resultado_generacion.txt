@@ -1,0 +1,26 @@
+Modelo: ECMWF
+Producto: 200
+Generadas: 0
+Errores/advertencias: 21
+
+[ERROR] No se pudo generar 200 f000: 200 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 200 f003: 200 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 200 f006: 200 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 200 f009: 200 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 200 f012: 200 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 200 f015: 200 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 200 f018: 200 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 200 f021: 200 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 200 f024: 200 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 200 f027: 200 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 200 f030: 200 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 200 f033: 200 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 200 f036: 200 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 200 f039: 200 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 200 f042: 200 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 200 f045: 200 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 200 f048: 200 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 200 f051: 200 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 200 f054: 200 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 200 f057: 200 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 200 f060: 200 hPa requiere GH + U + V.

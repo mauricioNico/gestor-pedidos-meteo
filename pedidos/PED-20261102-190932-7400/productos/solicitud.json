@@ -1,0 +1,45 @@
+{
+  "modelo": "ECMWF",
+  "productos": [
+    "SFC"
+  ],
+  "region": {
+    "nombre": "LAN",
+    "norte": -45.0,
+    "sur": -85.0,
+    "oeste": -80.0,
+    "este": -40.0,
+    "cruza_dateline": false
+  },
+  "punto": {
+    "habilitado": true,
+    "nombre": "MBIO",
+    "lat": -64.14,
+    "lon": -56.4
+  },
+  "corrida": {
+    "modo": "AUTO",
+    "fecha": null,
+    "ciclo": null
+  },
+  "periodo": {
+    "f_inicio": 0,
+    "f_fin": 84,
+    "salto": 3
+  },
+  "ruta": {
+    "dibujar": false,
+    "nombre": "",
+    "origen": {
+      "lat": null,
+      "lon": null,
+      "etiqueta": ""
+    },
+    "destino": {
+      "lat": null,
+      "lon": null,
+      "etiqueta": ""
+    },
+    "waypoints": []
+  }
+}

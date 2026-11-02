@@ -1,0 +1,26 @@
+Modelo: ECMWF
+Producto: 500
+Generadas: 0
+Errores/advertencias: 21
+
+[ERROR] No se pudo generar 500 f000: 500 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 500 f003: 500 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 500 f006: 500 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 500 f009: 500 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 500 f012: 500 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 500 f015: 500 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 500 f018: 500 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 500 f021: 500 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 500 f024: 500 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 500 f027: 500 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 500 f030: 500 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 500 f033: 500 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 500 f036: 500 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 500 f039: 500 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 500 f042: 500 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 500 f045: 500 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 500 f048: 500 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 500 f051: 500 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 500 f054: 500 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 500 f057: 500 hPa requiere GH + U + V.
+[ERROR] No se pudo generar 500 f060: 500 hPa requiere GH + U + V.

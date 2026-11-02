@@ -1,0 +1,34 @@
+{
+  "actualizado": "2026-11-02T21:21:14Z",
+  "retencion_dias": 7,
+  "pedidos": [
+    {
+      "id": "PED-20261102-200532-9098",
+      "creado": "2026-11-02T21:21:14Z",
+      "modelo": "ECMWF",
+      "region": "Cono Sur",
+      "productos": "SFC,500,200,SOND,MGRAM"
+    },
+    {
+      "id": "PED-20261102-192306-5880",
+      "creado": "2026-11-02T19:46:33Z",
+      "modelo": "GFS",
+      "region": "LAN",
+      "productos": "SFC,SOND,MGRAM"
+    },
+    {
+      "id": "PED-20261102-190932-7400",
+      "creado": "2026-11-02T19:19:23Z",
+      "modelo": "ECMWF",
+      "region": "LAN",
+      "productos": "SFC"
+    },
+    {
+      "id": "PED-20261102-185647-6203",
+      "creado": "2026-11-02T19:06:26Z",
+      "modelo": "ECMWF",
+      "region": "Patagonia y Antartida",
+      "productos": "SFC"
+    }
+  ]
+}

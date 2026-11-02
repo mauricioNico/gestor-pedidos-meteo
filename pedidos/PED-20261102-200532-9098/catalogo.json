@@ -1,0 +1,224 @@
+{
+  "id": "PED-20261102-200532-9098",
+  "creado": "2026-11-02T21:21:14Z",
+  "modelo": "ECMWF",
+  "region": "Cono Sur",
+  "productos": "SFC,500,200,SOND,MGRAM",
+  "archivos": [
+    {
+      "nombre": "meteograma_Neuquen.png",
+      "ruta": "MGRAM/meteograma_Neuquen.png",
+      "producto": "MGRAM"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f000.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f000.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f003.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f003.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f006.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f006.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f009.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f009.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f012.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f012.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f015.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f015.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f018.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f018.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f021.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f021.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f024.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f024.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f027.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f027.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f030.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f030.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f033.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f033.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f036.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f036.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f039.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f039.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f042.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f042.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f045.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f045.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f048.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f048.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f051.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f051.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f054.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f054.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f057.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f057.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SFC_Cono_Sur_f060.png",
+      "ruta": "SFC/ECMWF_SFC_Cono_Sur_f060.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "ECMWF_SOND_Neuquen_f000.png",
+      "ruta": "SOND/ECMWF_SOND_Neuquen_f000.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "ECMWF_SOND_Neuquen_f003.png",
+      "ruta": "SOND/ECMWF_SOND_Neuquen_f003.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "ECMWF_SOND_Neuquen_f006.png",
+      "ruta": "SOND/ECMWF_SOND_Neuquen_f006.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "ECMWF_SOND_Neuquen_f009.png",
+      "ruta": "SOND/ECMWF_SOND_Neuquen_f009.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "ECMWF_SOND_Neuquen_f012.png",
+      "ruta": "SOND/ECMWF_SOND_Neuquen_f012.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "ECMWF_SOND_Neuquen_f015.png",
+      "ruta": "SOND/ECMWF_SOND_Neuquen_f015.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "ECMWF_SOND_Neuquen_f018.png",
+      "ruta": "SOND/ECMWF_SOND_Neuquen_f018.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "ECMWF_SOND_Neuquen_f021.png",
+      "ruta": "SOND/ECMWF_SOND_Neuquen_f021.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "ECMWF_SOND_Neuquen_f024.png",
+      "ruta": "SOND/ECMWF_SOND_Neuquen_f024.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "ECMWF_SOND_Neuquen_f027.png",
+      "ruta": "SOND/ECMWF_SOND_Neuquen_f027.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "ECMWF_SOND_Neuquen_f030.png",
+      "ruta": "SOND/ECMWF_SOND_Neuquen_f030.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "ECMWF_SOND_Neuquen_f033.png",
+      "ruta": "SOND/ECMWF_SOND_Neuquen_f033.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "ECMWF_SOND_Neuquen_f036.png",
+      "ruta": "SOND/ECMWF_SOND_Neuquen_f036.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "ECMWF_SOND_Neuquen_f039.png",
+      "ruta": "SOND/ECMWF_SOND_Neuquen_f039.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "ECMWF_SOND_Neuquen_f042.png",
+      "ruta": "SOND/ECMWF_SOND_Neuquen_f042.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "ECMWF_SOND_Neuquen_f045.png",
+      "ruta": "SOND/ECMWF_SOND_Neuquen_f045.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "ECMWF_SOND_Neuquen_f048.png",
+      "ruta": "SOND/ECMWF_SOND_Neuquen_f048.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "ECMWF_SOND_Neuquen_f051.png",
+      "ruta": "SOND/ECMWF_SOND_Neuquen_f051.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "ECMWF_SOND_Neuquen_f054.png",
+      "ruta": "SOND/ECMWF_SOND_Neuquen_f054.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "ECMWF_SOND_Neuquen_f057.png",
+      "ruta": "SOND/ECMWF_SOND_Neuquen_f057.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "ECMWF_SOND_Neuquen_f060.png",
+      "ruta": "SOND/ECMWF_SOND_Neuquen_f060.png",
+      "producto": "SOND"
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "id": "PED-20261102-192306-5880",
+  "creado": "2026-11-02T19:46:33Z",
+  "modelo": "GFS",
+  "region": "LAN",
+  "productos": "SFC,SOND,MGRAM",
+  "archivos": [
+    {
+      "nombre": "meteograma_MBIO.png",
+      "ruta": "MGRAM/meteograma_MBIO.png",
+      "producto": "MGRAM"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f000.png",
+      "ruta": "SFC/GFS_SFC_LAN_f000.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f003.png",
+      "ruta": "SFC/GFS_SFC_LAN_f003.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f006.png",
+      "ruta": "SFC/GFS_SFC_LAN_f006.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f009.png",
+      "ruta": "SFC/GFS_SFC_LAN_f009.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f012.png",
+      "ruta": "SFC/GFS_SFC_LAN_f012.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f015.png",
+      "ruta": "SFC/GFS_SFC_LAN_f015.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f018.png",
+      "ruta": "SFC/GFS_SFC_LAN_f018.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f021.png",
+      "ruta": "SFC/GFS_SFC_LAN_f021.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f024.png",
+      "ruta": "SFC/GFS_SFC_LAN_f024.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f027.png",
+      "ruta": "SFC/GFS_SFC_LAN_f027.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f030.png",
+      "ruta": "SFC/GFS_SFC_LAN_f030.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f033.png",
+      "ruta": "SFC/GFS_SFC_LAN_f033.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f036.png",
+      "ruta": "SFC/GFS_SFC_LAN_f036.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f039.png",
+      "ruta": "SFC/GFS_SFC_LAN_f039.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f042.png",
+      "ruta": "SFC/GFS_SFC_LAN_f042.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f045.png",
+      "ruta": "SFC/GFS_SFC_LAN_f045.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f048.png",
+      "ruta": "SFC/GFS_SFC_LAN_f048.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f051.png",
+      "ruta": "SFC/GFS_SFC_LAN_f051.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f054.png",
+      "ruta": "SFC/GFS_SFC_LAN_f054.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f057.png",
+      "ruta": "SFC/GFS_SFC_LAN_f057.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f060.png",
+      "ruta": "SFC/GFS_SFC_LAN_f060.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f063.png",
+      "ruta": "SFC/GFS_SFC_LAN_f063.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f066.png",
+      "ruta": "SFC/GFS_SFC_LAN_f066.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f069.png",
+      "ruta": "SFC/GFS_SFC_LAN_f069.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f072.png",
+      "ruta": "SFC/GFS_SFC_LAN_f072.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f075.png",
+      "ruta": "SFC/GFS_SFC_LAN_f075.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f078.png",
+      "ruta": "SFC/GFS_SFC_LAN_f078.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f081.png",
+      "ruta": "SFC/GFS_SFC_LAN_f081.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SFC_LAN_f084.png",
+      "ruta": "SFC/GFS_SFC_LAN_f084.png",
+      "producto": "SFC"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f000.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f000.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f003.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f003.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f006.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f006.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f009.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f009.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f012.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f012.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f015.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f015.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f018.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f018.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f021.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f021.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f024.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f024.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f027.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f027.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f030.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f030.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f033.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f033.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f036.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f036.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f039.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f039.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f042.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f042.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f045.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f045.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f048.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f048.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f051.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f051.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f054.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f054.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f057.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f057.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f060.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f060.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f063.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f063.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f066.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f066.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f069.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f069.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f072.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f072.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f075.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f075.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f078.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f078.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f081.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f081.png",
+      "producto": "SOND"
+    },
+    {
+      "nombre": "GFS_SOND_MBIO_f084.png",
+      "ruta": "SOND/GFS_SOND_MBIO_f084.png",
+      "producto": "SOND"
+    }
+  ]
+}
